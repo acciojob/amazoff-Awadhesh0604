@@ -12,17 +12,19 @@ public class Order {
         this.id = id;
         Integer hour = Integer.valueOf(deliveryTime.substring(0, 2));
         Integer minutes = Integer.valueOf(deliveryTime.substring(3));
-        this.deliveryTime = hour*60 + minutes;
+        this.deliveryTime = hour * 60 + minutes;
     }
 
     public Order() {
     }
 
 
-
     public String getId() {
         return id;
     }
 
-    public int getDeliveryTime() {return deliveryTime;}
+
+    public int getDeliveryTime() {
+        return deliveryTime;
+    }
 }

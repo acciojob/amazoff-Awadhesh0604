@@ -30,6 +30,10 @@ public class OrderService {
         return orderRepository.getPartnerById(partnerId);
     }
 
+    public List<String> getAllOrders() {
+        return orderRepository.getAllOrders();
+    }
+
     public Integer getOrderCountByPartnerId(String partnerId) {
         return orderRepository.getOrderCountByPartnerId(partnerId);
     }
@@ -54,4 +58,7 @@ public class OrderService {
         orderRepository.deletePartner(partnerId);
     }
 
+    public void deleteOrder(String orderId) {
+        orderRepository.deleteOrder(orderId);
+    }
 }
